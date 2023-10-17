@@ -17,15 +17,12 @@ const Navbar = () => {
                             <NavLink to="/" className={({ isActive, isPending }) =>
                                 isPending ? "pending" : isActive ? "text-black" : ""
                             }><li><a>Home</a></li></NavLink>
-                            <NavLink to="/about" className={({ isActive, isPending }) =>
+                            <NavLink to="/AddProduct" className={({ isActive, isPending }) =>
                                 isPending ? "pending" : isActive ? "text-black" : ""
-                            }><li><a>About</a></li></NavLink>
-                            <NavLink to="/services" className={({ isActive, isPending }) =>
+                            }><li><a>Add Product</a></li></NavLink>
+                            <NavLink to="/MyCart" className={({ isActive, isPending }) =>
                                 isPending ? "pending" : isActive ? "text-black" : ""
-                            }><li><a>Services</a></li></NavLink>
-                            <NavLink to="/Appointment" className={({ isActive, isPending }) =>
-                                isPending ? "pending" : isActive ? "text-black" : ""
-                            }><li><a>Appointment</a></li></NavLink>
+                            }><li><a>My Cart</a></li></NavLink>
                             <NavLink to="/login" className={({ isActive, isPending }) =>
                                 isPending ? "pending" : isActive ? "text-black" : ""
                             }><li><a>Login</a></li></NavLink>
@@ -42,13 +39,13 @@ const Navbar = () => {
                         <NavLink to="/" className={({ isActive, isPending }) =>
                             isPending ? "pending" : isActive ? "text-black" : ""
                         }><li><a><FaHome></FaHome>Home</a></li></NavLink>
-                        <NavLink to="/about" className={({ isActive, isPending }) =>
+                        <NavLink to="/AddProduct" className={({ isActive, isPending }) =>
                             isPending ? "pending" : isActive ? "text-black" : ""
                         }><li><a>Add Product</a></li></NavLink>
-                        <NavLink to="/services" className={({ isActive, isPending }) =>
+                        <NavLink to="/MyCart" className={({ isActive, isPending }) =>
                             isPending ? "pending" : isActive ? "text-black" : ""
                         }><li><a>My Cart</a></li></NavLink>
-                        <NavLink to="/Login" className={({ isActive, isPending }) =>
+                        <NavLink to="/login" className={({ isActive, isPending }) =>
                             isPending ? "pending" : isActive ? "text-black" : ""
                         }><li><a>
                             <FaArrowAltCircleRight></FaArrowAltCircleRight> Login</a></li></NavLink>
