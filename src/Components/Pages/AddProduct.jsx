@@ -1,12 +1,43 @@
+import toast from "react-hot-toast";
 
 
 const AddProduct = () => {
+    const handleAddProduct = e => {
+        e.preventDefault();
+        const form = e.target;
+        const name = form.name.value;
+        const brand_name = form.brand_name.value;
+        const Type = form.Type.value;
+        const Price = form.Price.value;
+        const Description = form.Description.value;
+        const Rating = form.Rating.value;
+        const photo = form.photo.value;
+        const ProductItem = {name,brand_name,Type,Price,Description,Rating,photo}
+        console.log(ProductItem);
+
+        // send data on server
+        fetch('http://localhost:5500/foods',{
+            method:'POST',
+            headers: {
+                'content-type' : 'application/json'
+            },
+            body: JSON.stringify(ProductItem)
+        })
+        .then(res => res.json())
+        .catch(data => {
+            console.log(data);
+            if(data.insertedId) {
+                toast.success('successfully added your product')
+                
+            }
+        })
+    }
     return (
         <div>         
             <div className="max-w-6xl mx-auto my-10 bg-blue-300 p-24 " >
                 <h2 className="text-3xl font-extrabold text-center mb-5">Add Product</h2>
 
-                <form>
+                <form onSubmit={handleAddProduct}>
                     <div className="md:flex mb-8">
                         <div className="form-control md:w-1/2">
                             <label className="label">
@@ -21,7 +52,7 @@ const AddProduct = () => {
                                 <span className="label-text">Brand Name</span>
                             </label>
                             <label className="input-group">
-                                <input type="text" name="brand" placeholder="Brand Name" className="input input-bordered w-full" />
+                                <input type="text" name="brand_name" placeholder="Brand Name" className="input input-bordered w-full" />
                             </label>
                         </div>
                     </div>

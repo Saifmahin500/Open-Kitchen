@@ -1,5 +1,5 @@
-import { createContext, useState } from "react";
-import { GoogleAuthProvider, getAuth, signInWithEmailAndPassword, signInWithPopup } from "firebase/auth";
+import { createContext, useEffect, useState } from "react";
+import { GoogleAuthProvider, createUserWithEmailAndPassword, getAuth, onAuthStateChanged, signInWithEmailAndPassword, signInWithPopup, signOut } from "firebase/auth";
 import app from "../FireBase/FireBase";
 
 
@@ -19,6 +19,24 @@ const AuthProvider = ({children}) => {
         return signInWithEmailAndPassword(auth,email,password)
     }
 
+    const createUser = (email,password) => {
+        return createUserWithEmailAndPassword(auth,email,password)
+    }
+
+    useEffect(() => {
+        const unSubScribe = onAuthStateChanged(auth, (currentUser) => {
+                setUser(currentUser)
+        })
+        return () => {
+            return unSubScribe();
+        }
+    },[])
+
+    const logOut = () => {
+        return signOut(auth)
+    }
+
+
  
 
    
@@ -27,6 +45,8 @@ const AuthProvider = ({children}) => {
         user,
         GoogleSignIn,
         signIn,
+        createUser,
+        logOut
 
     }
     return (

@@ -13,11 +13,14 @@ import Login from './Components/Pages/Login';
 import AuthProvider from './Components/AuthProvider/AuthProvider';
 import Registration from './Components/Pages/Registration';
 import BrandCard from './Components/BrandCard/BrandCard';
+import ErrorPage from './Components/Pages/ErrorPage';
+import PrivateRoute from './Components/PrivateRoute/PrivateRoute';
 
 const router = createBrowserRouter([
   {
     path: "/",
     element:<Root></Root>,
+    errorElement: <ErrorPage></ErrorPage>,
     children: [
       {
         path: "/",
@@ -25,11 +28,11 @@ const router = createBrowserRouter([
       },
       {
         path: "/AddProduct",
-        element: <AddProduct></AddProduct>,
+        element: <PrivateRoute><AddProduct></AddProduct></PrivateRoute>,
       },
       {
         path: "/MyCart",
-        element: <MyCart></MyCart>,
+        element: <PrivateRoute><MyCart></MyCart></PrivateRoute>,
       },
       {
         path: "/login",

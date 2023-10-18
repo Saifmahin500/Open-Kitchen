@@ -22,7 +22,7 @@ const Login = () =>{
                 navigate(location?.state ? location.state : "/")
             })
             .catch(() =>{
-                toast.error("Password doesn't match");
+                toast.error("Email/password doesn't match");
               })
             }
         

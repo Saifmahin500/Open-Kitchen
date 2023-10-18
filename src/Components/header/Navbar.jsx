@@ -1,8 +1,14 @@
 import { NavLink } from "react-router-dom";
 import { FaHome, FaArrowAltCircleRight } from "react-icons/fa";
+import { useContext } from "react";
+import { AuthContext } from "../AuthProvider/AuthProvider";
 
 
 const Navbar = () => {
+    const { logOut, user} = useContext(AuthContext)
+    const handleLogOut = () => {
+        logOut();
+    }
 
     return (
         <div className="w-full">
@@ -52,7 +58,7 @@ const Navbar = () => {
                     </ul>
                 </div>
 
-                {/* <div className="navbar-end">
+                <div className="navbar-end">
                 {
                     user ?
                         <div className="flex items-center text-center">
@@ -94,7 +100,7 @@ const Navbar = () => {
 
                 }
 
-            </div> */}
+            </div>
             </div>
         </div>
     );

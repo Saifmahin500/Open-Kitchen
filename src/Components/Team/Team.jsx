@@ -5,7 +5,7 @@ const Team = () => {
     return (
         <div>
             <div>
-                <h3 className="text-center text-5xl font-bold my-10">Our Team Member</h3>
+                <h3 className="text-center text-5xl font-bold my-10">Team Member</h3>
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 mb-10">
                     <div className="relative flex w-96 flex-col rounded-xl bg-white bg-clip-border text-gray-700 shadow-md">
                         <div className="relative mx-8 mt-4 h-80 overflow-hidden  bg-clip-border text-gray-700 shadow-lg flex justify-center">
