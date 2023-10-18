@@ -10,6 +10,8 @@ import Home from './Components/Pages/Home.jsx';
 import AddProduct from './Components/Pages/AddProduct';
 import MyCart from './Components/Pages/MyCart';
 import Login from './Components/Pages/Login';
+import AuthProvider from './Components/AuthProvider/AuthProvider';
+import Registration from './Components/Pages/Registration';
 
 const router = createBrowserRouter([
   {
@@ -32,12 +34,18 @@ const router = createBrowserRouter([
         path: "/login",
         element: <Login></Login>,
       },
+      {
+        path: "/reg",
+        element: <Registration></Registration>,
+      },
     ]
   },
 ]);
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
+    <AuthProvider>
     <RouterProvider router={router} />
+    </AuthProvider>
   </React.StrictMode>,
 )
