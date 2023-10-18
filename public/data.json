@@ -1,0 +1,40 @@
+[
+    {
+      "ID": 12345,
+      "Image": "https://i.ibb.co/37SbJRp/burger-king.png",
+      "Brand_Name": "Burger King",
+      "Short_Description": "The XYZ Electronics Widget 2000 - Your Ultimate Gadget Companion."
+    },
+    {
+      "ID": 67890,
+      "Image": "https://i.ibb.co/6bp0Fdz/download.jpg",
+      "Brand_Name": "Starbucks",
+      "Short_Description": "Acme Appliances' latest invention - the TurboBlender 5000."
+    },
+    {
+      "ID": 13579,
+      "Image": "https://i.ibb.co/BVVsZ2D/KFC.png",
+      "Brand_Name": "KFC",
+      "Short_Description": "Discover the future with TechGizmo's VRX-900 Virtual Reality Headset."
+    },
+    {
+      "ID": 24680,
+      "Image": "https://i.ibb.co/0DkhCHL/pizza-hut.jpg",
+      "Brand_Name": "Pizza Hut",
+      "Short_Description": "Galactic Gadgets presents the CosmosCam X - Capture the Universe in High-Def."
+    },
+    {
+      "ID": 98765,
+      "Image": "https://i.ibb.co/5GDPJ36/Mc-Donald-s-Twitter-logo.png",
+      "Brand_Name": "McDonald's",
+      "Short_Description": "EcoLife's EcoBliss Eco-Friendly Water Bottle - Stay Hy"
+    },
+    {
+        "ID": 24670,
+        "Image": "https://i.ibb.co/jWhgWJn/dominos.png",
+        "Brand_Name": "Domino's",
+        "Short_Description": "Galactic Gadgets presents the CosmosCam X - Capture the Universe in High-Def."
+      }
+
+]
+    

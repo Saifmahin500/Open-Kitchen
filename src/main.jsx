@@ -12,6 +12,7 @@ import MyCart from './Components/Pages/MyCart';
 import Login from './Components/Pages/Login';
 import AuthProvider from './Components/AuthProvider/AuthProvider';
 import Registration from './Components/Pages/Registration';
+import BrandCard from './Components/BrandCard/BrandCard';
 
 const router = createBrowserRouter([
   {
@@ -37,6 +38,10 @@ const router = createBrowserRouter([
       {
         path: "/reg",
         element: <Registration></Registration>,
+      },
+      {
+        path: "/brandName",
+        element: <BrandCard></BrandCard>,
       },
     ]
   },
