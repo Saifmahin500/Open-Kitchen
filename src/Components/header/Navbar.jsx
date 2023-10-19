@@ -79,7 +79,7 @@ const Navbar = () => {
                                 </ul>
                             </div>
                             <button onClick={handleLogOut}
-                                className="btn btn-active btn-neutral"
+                                className="btn btn-active bg-[#d52a00]"
 
                                 type="button"
                                 data-ripple-light="true"

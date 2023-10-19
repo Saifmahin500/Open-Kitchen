@@ -15,6 +15,7 @@ import Registration from './Components/Pages/Registration';
 import BrandCard from './Components/BrandCard/BrandCard';
 import ErrorPage from './Components/Pages/ErrorPage';
 import PrivateRoute from './Components/PrivateRoute/PrivateRoute';
+import BrandsItems from './Components/BrandItems/BrandsItems';
 
 const router = createBrowserRouter([
   {
@@ -45,6 +46,11 @@ const router = createBrowserRouter([
       {
         path: "/brandName",
         element: <BrandCard></BrandCard>,
+      },
+      {
+        path: "/brandItems/:brand_name",
+        element: <PrivateRoute><BrandsItems></BrandsItems></PrivateRoute>,
+        loader: () => fetch("http://localhost:5500/foods")
       },
     ]
   },

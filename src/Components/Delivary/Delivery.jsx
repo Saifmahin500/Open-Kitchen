@@ -10,7 +10,7 @@ const Delivery = () => {
           <div>
             <h1 className="text-5xl font-bold">A Moments Of Delivered On <span className="text-[#f9c03b]">Right Time</span> & Place</h1>
             <p className="py-6">The restaurants in Hangzhou also catered to many northern Chinese who had fled south from Kaifeng during the Jurchen invasion of the 1120s, while it is also known that many restaurants were run by families.</p>
-            <button className="btn bg-[#f9c03b]">Order Now</button>
+            <button className="btn bg-[#f9c03b] font-bold">Order Now</button>
           </div>
         </div>
       </div>

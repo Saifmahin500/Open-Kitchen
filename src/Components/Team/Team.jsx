@@ -12,7 +12,7 @@ const Team = () => {
                             <img className="" src="https://i.ibb.co/PwdpZvx/296378494-472721248024460-707262741722012543-n.jpg" alt="profile-picture" />
                         </div>
                         <div className="p-6 text-center">
-                            <h4 className="mb-2 block font-sans text-2xl font-semibold leading-snug tracking-normal text-blue-gray-900 antialiased">
+                            <h4 className="mb-2 block font-sans text-2xl font-bold leading-snug tracking-normal text-blue-gray-900 antialiased">
                                 Saif Mahin
                             </h4>
                             <p className="block bg-gradient-to-tr from-pink-600 to-pink-400 bg-clip-text font-sans text-base font-medium leading-relaxed text-[#f9c03b] antialiased">
@@ -46,7 +46,7 @@ const Team = () => {
                             <img src="https://i.ibb.co/FnGb1tW/avatar-1.jpg" alt="profile-picture" />
                         </div>
                         <div className="p-6 text-center">
-                            <h4 className="mb-2 block font-sans text-2xl font-semibold leading-snug tracking-normal text-blue-gray-900 antialiased">
+                            <h4 className="mb-2 block font-sans text-2xl font-bold leading-snug tracking-normal text-blue-gray-900 antialiased">
                                 Rahman Habib
                             </h4>
                             <p className="block bg-gradient-to-tr from-pink-600 to-pink-400 bg-clip-text font-sans text-base font-medium leading-relaxed text-[#f9c03b] antialiased">
@@ -80,7 +80,7 @@ const Team = () => {
                             <img src="https://i.ibb.co/8dSJ0zT/avatar-3.jpg" alt="profile-picture" />
                         </div>
                         <div className="p-6 text-center">
-                            <h4 className="mb-2 block font-sans text-2xl font-semibold leading-snug tracking-normal text-blue-gray-900 antialiased">
+                            <h4 className="mb-2 block font-sans text-2xl font-bold leading-snug tracking-normal text-blue-gray-900 antialiased">
                                 Sajeeb Das
                             </h4>
                             <p className="block bg-gradient-to-tr from-pink-600 to-pink-400 bg-clip-text font-sans text-base font-medium leading-relaxed text-[#f9c03b]  antialiased">

@@ -1,5 +1,6 @@
 
 
+
 const Banner = () => {
     return (
         <div>
@@ -12,7 +13,7 @@ const Banner = () => {
                         <h1 className="text-xl font-bold">Open Kitchen!</h1>
                         <p className="text-5xl font-bold py-6">We Serve Special Branded <br /> <span className="text-[#d52a00]">Food</span> in town! </p>
                         <p className="text-xl py-6">Food is any substance consumed to provide nutritional support for an organism.</p>
-                        <button className="btn bg-[#d52a00]">Order Now</button> 
+                        <button className="btn bg-[#d52a00] font-bold" >Order Now</button> 
                     </div>
                 </div>
             </div>

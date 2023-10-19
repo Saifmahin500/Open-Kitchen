@@ -3,8 +3,7 @@
 const Footer = () => {
     return (
         <div>
-            {/* style={{ backgroundImage: 'url(https://i.ibb.co/F7Ycr3q/17821681-Food-Pattern-5-01.jpg)', backgroundPosition:"center", backgroundSize:"cover" }} */}
-            <footer className="footer footer-center bg-[#e0b75a] text-black">
+            <footer className="footer footer-center bg-[#e0b75a] text-black" >
                 <aside>
                     <img className="w-24 " src="https://i.ibb.co/frkHZW2/Kitchen-1-removebg-preview.png" alt="" />
                     <p className="font-bold">
