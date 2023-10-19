@@ -26,8 +26,8 @@ const AddProduct = () => {
         .then(res => res.json())
         .catch(data => {
             console.log(data);
-            if(data.insertedId) {
-                toast.success('successfully added your product')
+            if(data.insertedId > 1) {
+                alert("add")
                 
             }
         })
