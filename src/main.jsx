@@ -17,6 +17,7 @@ import ErrorPage from './Components/Pages/ErrorPage';
 import PrivateRoute from './Components/PrivateRoute/PrivateRoute';
 import BrandsItems from './Components/BrandItems/BrandsItems';
 import UpdatedProduct from './Components/UpdatedProduct/UpdatedProduct';
+import ProductDetails from './Components/productDetails/ProductDetails';
 
 const router = createBrowserRouter([
   {
@@ -35,6 +36,7 @@ const router = createBrowserRouter([
       {
         path: "/MyCart",
         element: <PrivateRoute><MyCart></MyCart></PrivateRoute>,
+        loader: () => fetch("http://localhost:5500/myCarts")
       },
       {
         path: "/login",
@@ -59,6 +61,14 @@ const router = createBrowserRouter([
         loader: ({params}) => {
           console.log(params);
         return fetch(`http://localhost:5500/foods/${params.id}`)
+        }
+      },
+      {
+        path: "/productDetails/:id",
+        element: <PrivateRoute><ProductDetails></ProductDetails></PrivateRoute>,
+        loader: ({params}) => {
+          console.log(params);
+        return fetch(` http://localhost:5500/foods/${params.id}`)
         }
       },
     ]

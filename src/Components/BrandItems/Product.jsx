@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 
 
 const Product = ({ product }) => {
-    const { name, brand_name, Type, Price, Rating, photo } = product;
+    const { _id,name, brand_name, Type, Price, Rating, photo } = product;
     return (
         <div>
             <div className="card  w-96 bg-base-100 shadow-xl">
@@ -36,7 +36,7 @@ const Product = ({ product }) => {
                   <p className="my-2">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quibusdam, nesciunt.</p>
 
                     <div className="card-actions ">
-                        <button className="btn btn-primary">More Details</button>
+                        <Link to={`/productDetails/${product._id}`}><button className="btn btn-primary">More Details</button></Link>
                       <Link to={`/singleProduct/${product._id}`}>
                       <button className="btn btn-primary">More Update</button>
                       </Link>

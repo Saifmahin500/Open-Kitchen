@@ -16,7 +16,7 @@ const AddProduct = () => {
         console.log(ProductItem);
 
         // send data on server
-        fetch('http://localhost:5500/foods',{
+        fetch('https://food-shop-server-side-csim0mcdv-saif-mahins-projects.vercel.app/foods',{
             method:'POST',
             headers: {
                 'content-type' : 'application/json'
