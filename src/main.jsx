@@ -16,6 +16,7 @@ import BrandCard from './Components/BrandCard/BrandCard';
 import ErrorPage from './Components/Pages/ErrorPage';
 import PrivateRoute from './Components/PrivateRoute/PrivateRoute';
 import BrandsItems from './Components/BrandItems/BrandsItems';
+import UpdatedProduct from './Components/UpdatedProduct/UpdatedProduct';
 
 const router = createBrowserRouter([
   {
@@ -51,6 +52,14 @@ const router = createBrowserRouter([
         path: "/brandItems/:brand_name",
         element: <PrivateRoute><BrandsItems></BrandsItems></PrivateRoute>,
         loader: () => fetch("http://localhost:5500/foods")
+      },
+      {
+        path: "/singleProduct/:id",
+        element: <UpdatedProduct></UpdatedProduct>,
+        loader: ({params}) => {
+          console.log(params);
+        return fetch(`http://localhost:5500/foods/${params.id}`)
+        }
       },
     ]
   },
