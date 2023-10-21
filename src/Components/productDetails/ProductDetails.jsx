@@ -7,7 +7,7 @@ const ProductDetails = () => {
     const { _id, name, brand_name,Price, Rating, photo } = productDetails;
     const carts = { _id, name, brand_name,Price, Rating, photo }
     const handleAddCart = () => {
-        fetch("http://localhost:5500/myCarts", {
+        fetch("https://food-shop-server-side.vercel.app/myCarts", {
             method: "POST",
             headers: {
               "Content-Type": "application/json",
@@ -32,7 +32,7 @@ const ProductDetails = () => {
     return (
         <div>
             <h2 className="text-center text-3xl font-semibold">Product Details</h2>
-            <div className="relative flex w-full max-w-6xl mx-auto   my-12 flex-row rounded-xl bg-white bg-clip-border text-gray-700 shadow-md">
+            <div className="relative flex lg:w-full lg:max-w-6xl mx-auto my-12 flex-row rounded-xl bg-white bg-clip-border text-gray-700 shadow-md">
                 <div className="relative w-2/5 m-0 overflow-hidden text-gray-700 bg-white rounded-r-none shrink-0 rounded-xl bg-clip-border">
                     <img
                         src={photo}

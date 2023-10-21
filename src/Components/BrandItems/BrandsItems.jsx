@@ -48,7 +48,7 @@ const BrandsItems = () => {
             </div>           
             <h3 className="text-5xl font-bold text-center">FEATURED PRODUCTS</h3>
             
-            <div className="  grid grid-cols-2 gap-8 my-10">
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 my-10">
                 {
                     brands.map(product => <Product key={brands._id} product={product}></Product>)
                 }

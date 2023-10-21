@@ -2,12 +2,12 @@
 import { initializeApp } from "firebase/app";
 
 const firebaseConfig = {
-  apiKey: "AIzaSyDTwAAN7GpMB_uoufHv0GDRAAQ7_15Uwco",
-  authDomain: "coffee-store-1fd2f.firebaseapp.com",
-  projectId: "coffee-store-1fd2f",
-  storageBucket: "coffee-store-1fd2f.appspot.com",
-  messagingSenderId: "653422645067",
-  appId: "1:653422645067:web:b463b49de326369cfba2ce"
+  apiKey: "AIzaSyDLN17VyVAu_XhXjqDRftSL56Rr-A5c848",
+  authDomain: "food-store-a5552.firebaseapp.com",
+  projectId: "food-store-a5552",
+  storageBucket: "food-store-a5552.appspot.com",
+  messagingSenderId: "214614276755",
+  appId: "1:214614276755:web:f4d4837701b2a75722ab66"
 };
 
 // Initialize Firebase

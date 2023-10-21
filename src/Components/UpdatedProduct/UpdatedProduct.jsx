@@ -20,7 +20,7 @@ const UpdatedProduct = () => {
         console.log(updatedItem);
 
         // send data on server
-        fetch(`http://localhost:5500/foods/${_id}`, {
+        fetch(`https://food-shop-server-side.vercel.app/foods/${_id}`, {
             method: 'PUT',
             headers: {
                 'content-type': 'application/json'

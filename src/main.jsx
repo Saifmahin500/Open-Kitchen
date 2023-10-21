@@ -36,7 +36,7 @@ const router = createBrowserRouter([
       {
         path: "/MyCart",
         element: <PrivateRoute><MyCart></MyCart></PrivateRoute>,
-        loader: () => fetch("http://localhost:5500/myCarts")
+        loader: () => fetch("https://food-shop-server-side.vercel.app/myCarts")
       },
       {
         path: "/login",
@@ -53,14 +53,14 @@ const router = createBrowserRouter([
       {
         path: "/brandItems/:brand_name",
         element: <PrivateRoute><BrandsItems></BrandsItems></PrivateRoute>,
-        loader: () => fetch("http://localhost:5500/foods")
+        loader: () => fetch("https://food-shop-server-side.vercel.app/foods")
       },
       {
         path: "/singleProduct/:id",
         element: <UpdatedProduct></UpdatedProduct>,
         loader: ({params}) => {
           console.log(params);
-        return fetch(`http://localhost:5500/foods/${params.id}`)
+        return fetch(`https://food-shop-server-side.vercel.app/foods/${params.id}`)
         }
       },
       {
@@ -68,7 +68,7 @@ const router = createBrowserRouter([
         element: <PrivateRoute><ProductDetails></ProductDetails></PrivateRoute>,
         loader: ({params}) => {
           console.log(params);
-        return fetch(` http://localhost:5500/foods/${params.id}`)
+        return fetch(` https://food-shop-server-side.vercel.app/foods/${params.id}`)
         }
       },
     ]

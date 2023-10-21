@@ -18,7 +18,7 @@ const MyCart = () => {
           }).then((result) => {
             if (result.isConfirmed) {
 
-        fetch(`http://localhost:5500/myCarts/${id}`, {
+        fetch(`https://food-shop-server-side.vercel.app/myCarts/${id}`, {
       method: "DELETE",
     })
       .then((res) => res.json())
@@ -42,7 +42,7 @@ const MyCart = () => {
     return (
         <div >
             <h3 className="text-center text-3xl font-bold my-10">My Cart Product List </h3>
-            <div className="max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-3 gap-10 ">
+            <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 ">
                 {
                     carts.map(cart => <div key={cart._id} className="card w-96 glass">
                     <figure><img className="h-[300px]" src={cart.photo} alt="food!" /></figure>

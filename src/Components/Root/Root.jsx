@@ -7,7 +7,7 @@ import { Toaster } from 'react-hot-toast';
 
 const Root = () => {
     return (
-        <div>
+        <div >
 
            
             <Navbar></Navbar>

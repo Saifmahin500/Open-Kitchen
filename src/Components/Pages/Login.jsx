@@ -34,7 +34,8 @@ const Login = () =>{
                 toast.success('Successfully LogIn!')
                 navigate(location?.state ? location.state : "/")
             })
-            .catch(() => {
+            .catch((error) => {
+                console.log(error);
                 toast.error("Password doesn't match");
             })
     }
@@ -67,8 +68,11 @@ const Login = () =>{
                                 <div className="form-control mt-6">
                                     <button className="btn btn-error">Login</button>
                                     <p className="text-center">Or</p>
-                                    <button onClick={handleGoogle} className="btn btn-neutral">Login With Google</button>
-                                    <p className="mt-4 block text-center font-sans text-base font-normal leading-relaxed text-gray-700 antialiased">
+                                </div>
+                            </form>
+                            <div className="text-center ">
+                            <button onClick={handleGoogle} className="btn btn-neutral  ml-4">Login With Google</button>
+                            <p className="mt-4 block text-center font-sans text-base font-normal leading-relaxed text-gray-700 antialiased">
                                         Dont’t Have An Account ?
                                        <Link to={"/reg"}>
                                        <a
@@ -78,8 +82,7 @@ const Login = () =>{
                                                 Registration
                                             </a></Link>
                                     </p>
-                                </div>
-                            </form>
+                            </div>
                         </div>
                     </div>
 
