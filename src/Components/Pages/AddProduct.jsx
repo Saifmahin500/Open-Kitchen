@@ -1,4 +1,5 @@
-import toast from "react-hot-toast";
+
+import Swal from "sweetalert2";
 
 
 const AddProduct = () => {
@@ -24,10 +25,14 @@ const AddProduct = () => {
             body: JSON.stringify(ProductItem)
         })
         .then(res => res.json())
-        .catch(data => {
+        .then(data => {
             console.log(data);
             if(data.insertedId > 1) {
-                alert("add")
+                Swal.fire(
+                    'Good job!',
+                    'Your pr0duct added!',
+                    'success'
+                )
                 
             }
         })

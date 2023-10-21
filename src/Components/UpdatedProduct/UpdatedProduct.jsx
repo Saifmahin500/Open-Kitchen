@@ -28,7 +28,7 @@ const UpdatedProduct = () => {
             body: JSON.stringify(updatedItem)
         })
             .then(res => res.json())
-            .catch(data => {
+            .then(data => {
                 console.log(data);
                 if (data.modifiedCount > 0) {
                     Swal.fire(

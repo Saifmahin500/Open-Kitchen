@@ -1,4 +1,5 @@
 import { Link, useLoaderData } from "react-router-dom";
+import Swal from "sweetalert2";
 
 
 const ProductDetails = () => {
@@ -17,7 +18,11 @@ const ProductDetails = () => {
             .then((data) => {
               console.log(data);
               if (data.insertedId) {
-                  alert("data added")
+                Swal.fire(
+                    'Good job!',
+                    'Your Product added on MyCart page!',
+                    'success'
+                )
               }
             });
 
